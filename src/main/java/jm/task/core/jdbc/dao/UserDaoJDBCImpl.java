@@ -95,7 +95,6 @@ public class UserDaoJDBCImpl implements UserDao {
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
             preparedStatement.execute();
-            preparedStatement.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
